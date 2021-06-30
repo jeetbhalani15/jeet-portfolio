@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #FDBA74;
+    --dark-gray: #68657aba;
+    --off-white:
+        #f6f5faba;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+/* spaces */
+.margin-md {
+    margin: 2rem;
+}
+
+
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 70%;
+    margin: auto;
+}
+
+.blog-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/** links **/
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    /* margin: 1rem 0rem; */
+    box-sizing: border-box;
+
+}
+
+.link-simple {
+    text-decoration: none;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white
+}
+
+.link-primary:hover {
+    box-shadow: 0px 0px 5px #79a493;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.link-secondary:hover {
+    box-shadow: 0px 0px 5px #79a493;
+}
+
+/* list */
+
+.list-non-bullet {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.list-item-inline {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+}
+
+/* nav */
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.85rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.nav-brand {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #0a0a0a;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.nav-pills {
+    text-align: right;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.hero .hero-img {
+    max-width: 60%;
+    display: block;
+    margin: auto;
+    margin: 1.5rem 0px;
+}
+
+.hero-heading {
+    padding: 0.6rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+.heading-inverted {
+    color: var(--primary-color);
+}
+
+.section {
+    padding: 2rem;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: #68657aba;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px rgb(173, 240, 160)
+}
+
+.card h2 {
+    margin-block-end: 0rem;
+    color: #8f8d9d;
+    margin-top: 1rem;
+}
+
+.tech-logo {
+    border-radius: 50%;
+    height: 405;
+    width: 40%;
+}
+
+.off {
+    background-color: var(--off-white);
+}
+
+/* footer */
+.footer {
+    background-color: var(--primary-color);
+    padding: 0.8rem 0.8rem;
+    text-align: center;
+    border-top-right-radius: 1rem;
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.footer-header {
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 0.5rem;
+}
+
+.social-link {
+    display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    height: 2rem;
+    width: 2rem;
+    background: rgb(80 107 212);
+    border-radius: 50%;
+    line-height: 2rem;
+    border: 1px solid white;
+    box-shadow: 4px 4px 11px rgb(43 43 43 / 80%);
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+    background-color: white;
+    box-shadow: 4px 4px 11px rgb(157, 126, 165);
+
+}
+
+
+/* for mobile */
+@media only screen and (max-width: 725px) {
+    /* For mobile phones: */
+    .card-holder {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .card{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgb(173, 240, 160);
+    margin-bottom: 0.8rem ;
+    }
+    .hero-img{
+        max-width: 60%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 400px) {
+  .btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
