@@ -249,6 +249,10 @@ p2{
     color:  #5a6efb;
     font-weight: 600;
 }
+span{
+    color:  #5a6efb;
+    font-weight: 600;
+}
 
 /* for mobile */
 @media only screen and (max-width: 725px) {
