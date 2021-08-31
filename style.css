@@ -31,6 +31,7 @@ hr {
 .container-center {
     max-width: 70%;
     margin: auto;
+   
 }
 
 .blog-holder {
@@ -128,7 +129,7 @@ hr {
 }
 
 .hero .hero-img {
-    max-width: 53%;
+    max-width: 30%;
     display: block;
     margin: auto;
     margin: 1.5rem 0px;
@@ -136,8 +137,9 @@ hr {
 
 .hero-heading {
     padding: 0.6rem;
-    color: #6c697bba;
+    color: #2a2831ba;
     text-align: center;
+    font-size: x-large;
 }
 
 .heading-inverted {
@@ -146,7 +148,10 @@ hr {
 
 .section {
     padding: 2rem;
+    
+    
 }
+
 
 .h1 {
     text-align: center;
@@ -240,7 +245,10 @@ hr {
     margin: 0rem;
     color: black;
 }
-
+p2{
+    color:  #5a6efb;
+    font-weight: 600;
+}
 
 /* for mobile */
 @media only screen and (max-width: 725px) {
