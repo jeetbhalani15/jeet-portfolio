@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 :root {
     --primary-color: #F6AD55;
@@ -72,7 +72,8 @@ hr {
 }
 
 .link-secondary:hover {
-    box-shadow: 0px 0px 5px #79a493;
+    box-shadow: 0px 0px 5px #5a6efb;
+    /* background-color: #e4e5f7; */
 }
 
 /* list */
@@ -195,6 +196,7 @@ hr {
 
 .off {
     background-color: var(--off-white);
+    text-align: center;
 }
 
 /* footer */
@@ -253,6 +255,10 @@ span{
     color:  #5a6efb;
     font-weight: 600;
 }
+small{
+    font-size: medium;
+}
+
 
 /* for mobile */
 @media only screen and (max-width: 725px) {
